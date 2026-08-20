@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça uma rotina online de 7 dias dedicada ao autocuidado, movimento e bem-estar, com aulas guiadas e acesso online.">
+    <meta name="theme-color" content="#8B5E68">
+
+    <meta property="og:title" content="Protocolo Sem Celulite | Rotina de Autocuidado">
+    <meta property="og:description" content="Conheça uma rotina online de 7 dias dedicada ao autocuidado, movimento e bem-estar, com aulas guiadas e acesso online.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_PT">
+
+    <title>Protocolo Sem Celulite | Rotina de Autocuidado</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ================= CONFIGURAÇÃO CENTRAL ================= */
+        :root {
+            /* Cores */
+            --primary-color: #8B5E68;
+            --secondary-color: #D8B8B0;
+            --background: #FFF9F7;
+            --background-secondary: #F5ECE9;
+            --text: #2B2526;
+            --text-secondary: #6E6263;
+            --white: #FFFFFF;
+            --cta: #9B5360;
+
+            /* Tipografia */
+            --font-display: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+
+            /* Produto */
+            --product-name: "Protocolo Sem Celulite";
+            --product-price: "19 €";
+            --product-old-price: "190 €";
+            --product-discount: "90%";
+            --product-saving: "171 €";
+            --access-duration: "365 dias";
+            --guarantee-days: "14";
+            --checkout-url: "[INSERIR URL DO CHECKOUT]";
+        }
+
+        /* ================= RESET & GLOBALS ================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text);
+            background-color: var(--background);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* ================= TIPOGRAFIA ================= */
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 8vw, 3.5rem);
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--text);
+        }
+
+        h2 {
+            font-family: var(--font-display);
+            font-size: clamp(1.75rem, 6vw, 2.5rem);
+            font-weight: 600;
+            line-height: 1.3;
+            color: var(--text);
+        }
+
+        h3 {
+            font-family: var(--font-body);
+            font-size: clamp(1.25rem, 4vw, 1.5rem);
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-weight: 400;
+            line-height: 1.7;
+        }
+
+        /* ================= BOTÕES ================= */
+        .btn {
+            display: inline-block;
+            padding: 16px 32px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: var(--font-body);
+            text-decoration: none;
+            text-align: center;
+            min-height: 54px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            background-color: var(--cta);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(155, 83, 96, 0.2);
+        }
+
+        .btn-primary:focus {
+            outline: 2px solid var(--text);
+            outline-offset: 2px;
+        }
+
+        .btn-secondary {
+            background-color: var(--background-secondary);
+            color: var(--text);
+            border: 1px solid var(--secondary-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        /* ================= CONTAINER & LAYOUT ================= */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: clamp(60px, 12vw, 100px) 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: clamp(40px, 8vw, 60px);
+        }
+
+        .section-title h2 {
+            margin-bottom: 16px;
+        }
+
+        .section-title p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ================= GRID ================= */
+        .grid {
+            display: grid;
+            gap: clamp(20px, 4vw, 40px);
+            margin-bottom: clamp(40px, 8vw, 60px);
+        }
+
+        .grid-2 {
+            grid-template-columns: 1fr;
+        }
+
+        .grid-3 {
+            grid-template-columns: 1fr;
+        }
+
+        .grid-4 {
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .grid-2 { grid-template-columns: repeat(2, 1fr); }
+            .grid-3 { grid-template-columns: repeat(3, 1fr); }
+            .grid-4 { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (min-width: 1024px) {
+            .grid-4 { grid-template-columns: repeat(4, 1fr); }
+        }
+
+        /* ================= HERO ================= */
+        .hero {
+            padding: clamp(60px, 15vw, 120px) 20px;
+            background: linear-gradient(135deg, var(--background) 0%, var(--background-secondary) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(216, 184, 176, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: clamp(40px, 8vw, 60px);
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        @media (min-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            gap: clamp(20px, 4vw, 40px);
+        }
+
+        .hero-label {
+            font-size: 0.9rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .hero-title {
+            color: var(--text);
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .hero-features {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            font-size: 0.95rem;
+        }
+
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text);
+        }
+
+        .hero-feature::before {
+            content: '✓';
+            color: var(--cta);
+            font-weight: bold;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .hero-pricing {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 24px;
+            background-color: var(--white);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .price-main {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 8vw, 3.5rem);
+            color: var(--cta);
+            font-weight: 600;
+        }
+
+        .price-old {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            text-decoration: line-through;
+        }
+
+        .discount-badge {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text);
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            width: fit-content;
+        }
+
+        .price-info {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .hero-image {
+            position: relative;
+            height: clamp(300px, 50vw, 500px);
+            background: linear-gradient(135deg, var(--secondary-color), var(--background-secondary));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-disclaimer {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 12px;
+            font-style: italic;
+        }
+
+        /* ================= TRUST BAR ================= */
+        .trust-bar {
+            background-color: var(--white);
+            padding: 40px 20px;
+            border-top: 1px solid var(--background-secondary);
+            border-bottom: 1px solid var(--background-secondary);
+        }
+
+        .trust-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .trust-title {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--text);
+            margin-bottom: 32px;
+            font-weight: 600;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .trust-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .trust-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .trust-item::before {
+            content: '✓';
+            color: var(--cta);
+            font-size: 1.5rem;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .trust-item-text {
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+
+        /* ================= CARD ================= */
+        .card {
+            background-color: var(--white);
+            padding: clamp(24px, 4vw, 40px);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: 1px solid var(--background-secondary);
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+        }
+
+        .card-number {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            opacity: 0.6;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+        }
+
+        /* ================= ACCORDION ================= */
+        .accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .accordion-item {
+            background-color: var(--white);
+            border: 1px solid var(--background-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--white);
+            transition: all 0.3s ease;
+            border: none;
+            width: 100%;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .accordion-header:hover {
+            background-color: var(--background-secondary);
+        }
+
+        .accordion-header::after {
+            content: '+';
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+            color: var(--primary-color);
+        }
+
+        .accordion-item.active .accordion-header::after {
+            transform: rotate(45deg);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background-color: var(--background-secondary);
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+        }
+
+        .accordion-text {
+            padding: 0 20px 20px 20px;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* ================= TABLE ================= */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: clamp(16px, 3vw, 24px);
+            text-align: left;
+            border-bottom: 1px solid var(--background-secondary);
+        }
+
+        .comparison-table th {
+            background-color: var(--background-secondary);
+            font-weight: 600;
+            color: var(--text);
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+        }
+
+        .comparison-table td {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table .checkmark::before {
+            content: '✓';
+            color: var(--cta);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        /* ================= TESTIMONIAL ================= */
+        .testimonial {
+            background-color: var(--white);
+            padding: clamp(24px, 4vw, 32px);
+            border-radius: 8px;
+            border-left: 4px solid var(--cta);
+        }
+
+        .testimonial-text {
+            font-size: 1rem;
+            color: var(--text);
+            line-height: 1.8;
+            margin-bottom: 16px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--text);
+            font-size: 0.95rem;
+        }
+
+        /* ================= OFERTA ================= */
+        .offer-section {
+            background: linear-gradient(135deg, var(--background-secondary) 0%, var(--background) 100%);
+            text-align: center;
+            padding: clamp(60px, 12vw, 100px) 20px;
+        }
+
+        .offer-price-display {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin: 32px 0;
+            flex-wrap: wrap;
+        }
+
+        .offer-old-price {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            text-decoration: line-through;
+        }
+
+        .offer-new-price {
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 10vw, 4.5rem);
+            color: var(--cta);
+            font-weight: 700;
+        }
+
+        .offer-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            margin: 32px 0;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+
+        .offer-info-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .offer-info-item::before {
+            content: '✓';
+            color: var(--cta);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* ================= HEADER ================= */
+        header {
+            background-color: var(--white);
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--background-secondary);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .header-cta {
+            padding: 10px 20px;
+            font-size: 0.85rem;
+        }
+
+        /* ================= FOOTER ================= */
+        footer {
+            background-color: var(--text);
+            color: var(--white);
+            padding: clamp(40px, 8vw, 60px) 20px;
+            margin-top: clamp(60px, 12vw, 100px);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: clamp(32px, 6vw, 48px);
+            margin-bottom: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .footer-section h3 {
+            color: var(--white);
+            margin-bottom: 16px;
+            font-size: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .footer-disclaimer {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 24px;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.8;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 24px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* ================= FLOATING CTA ================= */
+        .floating-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--white);
+            border-top: 1px solid var(--background-secondary);
+            padding: 12px 20px;
+            z-index: 50;
+            display: none;
+            gap: 12px;
+        }
+
+        .floating-cta.show {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media (min-width: 768px) {
+            .floating-cta {
+                display: none;
+            }
+        }
+
+        /* ================= RESPONSIVIDADE ================= */
+        @media (max-width: 767px) {
+            .section {
+                padding: 40px 20px;
+            }
+
+            .hero {
+                padding: 40px 20px;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            h1 { font-size: 1.75rem; }
+            h2 { font-size: 1.4rem; }
+            h3 { font-size: 1.1rem; }
+        }
+
+        /* ================= ACCESSIBILITY ================= */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        a:focus,
+        button:focus {
+            outline: 2px solid var(--text);
+            outline-offset: 2px;
+        }
+
+        /* ================= ANIMAÇÕES ================= */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-content">
+            <div class="logo">Protocolo Sem Celulite</div>
+            <a href="#checkout" class="btn btn-primary header-cta">Começar</a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-label">Rotina de Autocuidado · 7 Dias</div>
+                <h1 class="hero-title">Uma rotina simples para cuidar da aparência da sua pele.</h1>
+                <p class="hero-subtitle">Descubra um programa online guiado, criado para ajudar a integrar práticas de autocuidado e bem-estar no seu dia a dia.</p>
+
+                <div class="hero-features">
+                    <div class="hero-feature">7 aulas em vídeo</div>
+                    <div class="hero-feature">Cerca de 15 minutos por dia</div>
+                    <div class="hero-feature">Acesso durante 365 dias</div>
+                    <div class="hero-feature">Pode acompanhar em casa</div>
+                </div>
+
+                <div class="hero-pricing">
+                    <div class="price-main">19 €</div>
+                    <div class="price-old">De 190 €</div>
+                    <div class="discount-badge">90% de desconto</div>
+                    <div class="price-info">Poupe 171 €</div>
+                    <a href="#checkout" class="btn btn-primary">Quero Começar Agora</a>
+                </div>
+
+                <p class="hero-disclaimer">Os resultados podem variar de pessoa para pessoa.</p>
+            </div>
+
+            <div class="hero-image">
+                <img src="[INSERIR IMAGEM REAL]" alt="Mulher praticando autocuidado - Protocolo Sem Celulite" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="trust-bar">
+        <div class="trust-content">
+            <div class="trust-title">Uma rotina simples. Orientação clara. Mais cuidado consigo.</div>
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-item-text">Programa online</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-item-text">Aulas guiadas</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-item-text">Pode fazer em casa</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-item-text">Acesso imediato</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section class="section" id="problema">
+        <div class="container">
+            <div class="section-title">
+                <h2>A celulite é comum. Querer sentir-se melhor com a aparência da sua pele também.</h2>
+            </div>
+
+            <div style="max-width: 700px; margin: 0 auto;">
+                <p style="margin-bottom: 24px;">A celulite é uma característica muito comum da pele e pode surgir em diferentes tipos de corpo.</p>
+
+                <p style="margin-bottom: 24px;">Para muitas mulheres, a questão não é procurar a perfeição, mas sentir-se mais confortável e confiante com a própria aparência.</p>
+
+                <p style="margin-bottom: 24px;">Entre produtos, tratamentos e rotinas difíceis de manter, pode ser complicado saber por onde começar.</p>
+
+                <p style="margin-bottom: 32px;">Foi para simplificar esse processo que este programa foi estruturado.</p>
+
+                <div style="text-align: center;">
+                    <a href="#programa" class="btn btn-primary">Conhecer o Programa</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUÇÃO -->
+    <section class="section" style="background-color: var(--white);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Menos complicação. Uma rotina mais simples.</h2>
+                <p>O Protocolo Sem Celulite reúne diferentes práticas de autocuidado e movimento numa sequência simples de acompanhar.</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-number">01</div>
+                    <h3>Rotina</h3>
+                    <p>Uma estrutura organizada para saber o que fazer em cada etapa.</p>
+                </div>
+                <div class="card">
+                    <div class="card-number">02</div>
+                    <h3>Orientação</h3>
+                    <p>Aulas em vídeo para acompanhar as técnicas de forma simples.</p>
+                </div>
+                <div class="card">
+                    <div class="card-number">03</div>
+                    <h3>Consistência</h3>
+                    <p>Uma rotina pensada para ser fácil de integrar no dia a dia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="section" id="como-funciona">
+        <div class="container">
+            <div class="section-title">
+                <h2>Começar é simples.</h2>
+            </div>
+
+            <div class="grid grid-4">
+                <div class="card">
+                    <div class="card-number">01</div>
+                    <h3>Aceda</h3>
+                    <p>Depois da compra, receba os dados necessários para aceder à plataforma.</p>
+                </div>
+                <div class="card">
+                    <div class="card-number">02</div>
+                    <h3>Veja</h3>
+                    <p>Assista às aulas e acompanhe as instruções.</p>
+                </div>
+                <div class="card">
+                    <div class="card-number">03</div>
+                    <h3>Pratique</h3>
+                    <p>Reserve cerca de 15 minutos por dia para realizar a rotina.</p>
+                </div>
+                <div class="card">
+                    <div class="card-number">04</div>
+                    <h3>Mantenha</h3>
+                    <p>Continue a utilizar as práticas de forma consistente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O QUE ESTÁ INCLUÍDO -->
+    <section class="section" style="background-color: var(--white);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tudo o que precisa para começar.</h2>
+            </div>
+
+            <div style="max-width: 600px; margin: 0 auto;">
+                <div class="grid grid-2">
+                    <div class="hero-feature" style="font-size: 1rem; color: var(--text);">7 aulas em vídeo</div>
+                    <div class="hero-feature" style="font-size: 1rem; color: var(--text);">Orientação passo a passo</div>
+                    <div class="hero-feature" style="font-size: 1rem; color: var(--text);">Rotinas organizadas</div>
+                    <div class="hero-feature" style="font-size: 1rem; color: var(--text);">Cerca de 15 minutos por dia</div>
+                    <div class="hero-feature" style="font-size: 1rem; color: var(--text);">Acesso durante 365 dias</div>
+                    <div class="hero-feature" style="font-size: 1rem; color: var(--text);">Acesso através de computador e telemóvel</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAMA 7 DIAS -->
+    <section class="section" id="programa">
+        <div class="container">
+            <div class="section-title">
+                <h2>O seu percurso de 7 dias.</h2>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-number">Intro</div>
+                    <h3>Introdução</h3>
+                    <p>Conheça a estrutura do programa e prepare-se para começar.</p>
+                </div>
+                <div class="card">
+                    <div class="card-number">01</div>
+                    <h3>Drenagem Linfática</h3>
+                    <p>Movimentos suaves integrados numa rotina de autocuidado.</p>
+                </div>
+                <div class="card">
+                    <div class="card-number">02</div>
+                    <h3>Massagem e Escovagem a Seco</h3>
+                    <p>Aprenda práticas de automassagem e escovagem a seco.</p>
+                </div>
+                <div class="card">
+                    <div class="card-number">03</div>
+                    <h3>Ventosaterapia</h3>
+                    <p>Conheça a utilização das ventosas no contexto apresentado pelo programa. <em style="font-size: 0.85rem;">Aviso: consulte um profissional de saúde se tiver dúvidas.</em></p>
+                </div>
+                <div class="card">
+                    <div class="card-number">04</div>
+                    <h3>Mobilidade dos Tecidos</h3>
+                    <p>Técnicas de mobilidade e automassagem integradas na rotina.</p>
+                </div>
+                <div class="card">
+                    <div class="card-number">05</div>
+                    <h3>Tonificação das Pernas</h3>
+                    <p>Exercícios simples para trabalhar pernas e glúteos.</p>
+                </div>
+                <div class="card">
+                    <div class="card-number">06</div>
+                    <h3>Nutrição e Bem-estar</h3>
+                    <p>Conheça hábitos de estilo de vida que podem fazer parte de uma rotina equilibrada.</p>
+                </div>
+                <div class="card">
+                    <div class="card-number">07</div>
+                    <h3>Rotina Contínua</h3>
+                    <p>Aprenda a organizar as práticas numa rotina semanal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section class="section" style="background-color: var(--white);">
+        <div class="container">
+            <div class="section-title">
+                <h2>O que pode fazer parte da sua nova rotina.</h2>
+            </div>
+
+            <div style="max-width: 600px; margin: 0 auto;">
+                <div class="grid grid-2">
+                    <div class="hero-feature" style="font-size: 1rem; color: var(--text);">Uma rotina organizada de autocuidado</div>
+                    <div class="hero-feature" style="font-size: 1rem; color: var(--text);">Práticas simples para realizar em casa</div>
+                    <div class="hero-feature" style="font-size: 1rem; color: var(--text);">Aulas guiadas</div>
+                    <div class="hero-feature" style="font-size: 1rem; color: var(--text);">Maior consistência nos cuidados pessoais</div>
+                    <div class="hero-feature" style="font-size: 1rem; color: var(--text);">Mais atenção ao bem-estar</div>
+                    <div class="hero-feature" style="font-size: 1rem; color: var(--text);">Uma rotina de cerca de 15 minutos por dia</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTEMUNHOS -->
+    <section class="section" id="testemunhos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Experiências de quem já começou.</h2>
+                <p>Histórias reais de pessoas que integram o programa na sua rotina.</p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="testimonial">
+                    <p class="testimonial-text">"[INSERIR TESTEMUNHO REAL]"</p>
+                    <p class="testimonial-author">— [INSERIR NOME]</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"[INSERIR TESTEMUNHO REAL]"</p>
+                    <p class="testimonial-author">— [INSERIR NOME]</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"[INSERIR TESTEMUNHO REAL]"</p>
+                    <p class="testimonial-author">— [INSERIR NOME]</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"[INSERIR TESTEMUNHO REAL]"</p>
+                    <p class="testimonial-author">— [INSERIR NOME]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPARAÇÃO -->
+    <section class="section" style="background-color: var(--white);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Uma forma mais simples de organizar os seus cuidados.</h2>
+            </div>
+
+            <div style="overflow-x: auto;">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 40%;"></th>
+                            <th style="width: 30%;">Protocolo Sem Celulite</th>
+                            <th style="width: 30%;">Rotinas Não Estruturadas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Orientação</td>
+                            <td class="checkmark">Incluída</td>
+                            <td>Variável</td>
+                        </tr>
+                        <tr>
+                            <td>Organização</td>
+                            <td class="checkmark">Estruturada</td>
+                            <td>Sem estrutura</td>
+                        </tr>
+                        <tr>
+                            <td>Flexibilidade</td>
+                            <td class="checkmark">Flexível</td>
+                            <td class="checkmark">Flexível</td>
+                        </tr>
+                        <tr>
+                            <td>Pode realizar em casa</td>
+                            <td class="checkmark">Sim</td>
+                            <td class="checkmark">Sim</td>
+                        </tr>
+                        <tr>
+                            <td>Acesso online</td>
+                            <td class="checkmark">Sim</td>
+                            <td>Variável</td>
+                        </tr>
+                        <tr>
+                            <td>Duração diária</td>
+                            <td class="checkmark">Cerca de 15 minutos</td>
+                            <td>Indeterminada</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFERTA -->
+    <section class="offer-section" id="checkout">
+        <div class="container">
+            <h2 style="margin-bottom: 24px;">Comece hoje por apenas 19 €.</h2>
+
+            <div class="offer-price-display">
+                <div class="offer-old-price">190 €</div>
+                <div class="offer-new-price">19 €</div>
+            </div>
+
+            <div class="discount-badge" style="margin: 0 auto 32px; display: flex; width: fit-content;">90% de desconto</div>
+
+            <div class="offer-info">
+                <div class="offer-info-item">Pagamento único</div>
+                <div class="offer-info-item">365 dias de acesso</div>
+            </div>
+
+            <div style="max-width: 500px; margin: 0 auto 32px;">
+                <a href="[INSERIR URL DO CHECKOUT]" class="btn btn-primary" style="width: 100%;">Quero o Meu Acesso — 19 €</a>
+            </div>
+
+            <div class="offer-info" style="gap: 12px; flex-direction: column; margin: 0;">
+                <div class="offer-info-item">Pagamento seguro</div>
+                <div class="offer-info-item">Acesso online</div>
+                <div class="offer-info-item">Comece após a confirmação do pagamento</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GARANTIA -->
+    <section class="section" style="background-color: var(--white);">
+        <div class="container">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+                <h2 style="margin-bottom: 24px;">Experimente com tranquilidade.</h2>
+                <p style="margin-bottom: 32px; font-size: 1.1rem;">Tem 14 dias para conhecer o programa e decidir se é adequado para si. Para solicitar um reembolso, siga as condições indicadas na política de reembolso.</p>
+
+                <div style="background-color: var(--background-secondary); padding: 32px; border-radius: 8px; margin-bottom: 32px;">
+                    <div style="font-family: var(--font-display); font-size: 2rem; color: var(--primary-color); font-weight: 600; margin-bottom: 12px;">14 Dias de Garantia</div>
+                </div>
+
+                <a href="[INSERIR URL DO CHECKOUT]" class="btn btn-primary">Começar com Garantia</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Perguntas Frequentes</h2>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">Como recebo o acesso?</button>
+                    <div class="accordion-content">
+                        <div class="accordion-text">
+                            Depois de completar o pagamento, receberá um email com os dados necessários para aceder à plataforma. O acesso é imediato.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">Posso acompanhar através do telemóvel?</button>
+                    <div class="accordion-content">
+                        <div class="accordion-text">
+                            Sim, o programa é totalmente responsivo e funciona perfeitamente em computadores, tablets e telemóveis.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">Preciso de algum equipamento?</button>
+                    <div class="accordion-content">
+                        <div class="accordion-text">
+                            A maioria das práticas pode ser realizada apenas com o seu corpo. Alguns dias incluem técnicas que beneficiam de equipamento como ventosas ou escovas de corpo seco, mas estes são opcionais.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">Quanto tempo demora cada sessão?</button>
+                    <div class="accordion-content">
+                        <div class="accordion-text">
+                            Cada sessão tem aproximadamente 15 minutos de duração, o que facilita integrar a prática na sua rotina diária.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">Quando posso começar?</button>
+                    <div class="accordion-content">
+                        <div class="accordion-text">
+                            Pode começar imediatamente após receber os dados de acesso, que chegam por email após a confirmação do pagamento.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">Durante quanto tempo tenho acesso?</button>
+                    <div class="accordion-content">
+                        <div class="accordion-text">
+                            O seu acesso é válido durante 365 dias a partir da data de compra. Pode aceder ao programa sempre que desejar durante este período.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">Como funciona o pagamento?</button>
+                    <div class="accordion-content">
+                        <div class="accordion-text">
+                            O pagamento é processado de forma segura através de plataformas de pagamento certificadas. É um pagamento único sem subscrições associadas.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">Existe garantia?</button>
+                    <div class="accordion-content">
+                        <div class="accordion-text">
+                            Sim, existe uma garantia de 14 dias. Se não estiver satisfeita, pode solicitar um reembolso completo dentro deste período, seguindo os passos indicados na política de reembolso.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">Os resultados são iguais para todas as pessoas?</button>
+                    <div class="accordion-content">
+                        <div class="accordion-text">
+                            Não, os resultados variam de pessoa para pessoa e podem depender de vários factores, incluindo consistência, tipo de pele, estilo de vida e características individuais.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">Existe alguma subscrição?</button>
+                    <div class="accordion-content">
+                        <div class="accordion-text">
+                            Não. O que está pagando é um pagamento único de 19 € que lhe dá acesso ao programa durante 365 dias. Não existe nenhuma subscrição recorrente.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section" style="background-color: var(--white);">
+        <div class="container">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+                <h2 style="margin-bottom: 24px;">Está pronta para começar a cuidar mais de si?</h2>
+                <p style="margin-bottom: 32px; font-size: 1.1rem;">Reserve alguns minutos do seu dia para criar uma rotina simples de autocuidado e bem-estar.</p>
+
+                <div style="font-family: var(--font-display); font-size: 3rem; color: var(--cta); font-weight: 700; margin-bottom: 32px;">19 €</div>
+
+                <a href="[INSERIR URL DO CHECKOUT]" class="btn btn-primary" style="margin-bottom: 32px;">Quero Começar Agora</a>
+
+                <div class="grid grid-2" style="max-width: 500px; margin: 0 auto;">
+                    <div class="hero-feature" style="font-size: 0.95rem; color: var(--text);">Acesso imediato</div>
+                    <div class="hero-feature" style="font-size: 0.95rem; color: var(--text);">365 dias de acesso</div>
+                    <div class="hero-feature" style="font-size: 0.95rem; color: var(--text);">Pagamento seguro</div>
+                    <div class="hero-feature" style="font-size: 0.95rem; color: var(--text);">Garantia de 14 dias</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Protocolo Sem Celulite</h3>
+                <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">Um programa online de autocuidado e bem-estar para integrar na sua rotina.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <div class="footer-links">
+                    <a href="#home">Página Inicial</a>
+                    <a href="#programa">O Programa</a>
+                    <a href="#faq">Perguntas Frequentes</a>
+                    <a href="#checkout">Comprar Agora</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Informações Legais</h3>
+                <div class="footer-links">
+                    <a href="[INSERIR URL DA POLÍTICA DE PRIVACIDADE]">Política de Privacidade</a>
+                    <a href="[INSERIR URL DOS TERMOS]">Termos e Condições</a>
+                    <a href="[INSERIR URL DA POLÍTICA DE REEMBOLSO]">Política de Reembolso</a>
+                    <a href="[INSERIR URL DA POLÍTICA DE COOKIES]">Política de Cookies</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contacte-nos</h3>
+                <div class="footer-links">
+                    <a href="mailto:[INSERIR EMAIL]">[INSERIR EMAIL]</a>
+                    <a href="tel:[INSERIR TELEMÓVEL]">[INSERIR TELEMÓVEL]</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-disclaimer">
+            <p><strong>Aviso de Segurança:</strong> Antes de iniciar qualquer prática física ou técnica apresentada no programa, leia as orientações fornecidas e respeite os seus limites. Se tiver alguma condição de saúde, estiver grávida, tiver realizado recentemente algum procedimento médico ou tiver dúvidas sobre a segurança de determinada prática, procure aconselhamento de um profissional de saúde.</p>
+
+            <p style="margin-top: 16px;"><strong>Disclaimer Médico:</strong> Os conteúdos apresentados neste website têm fins exclusivamente educativos e informativos e não substituem aconselhamento, diagnóstico ou tratamento médico. Os resultados podem variar de pessoa para pessoa e podem depender de vários factores, incluindo consistência e características individuais.</p>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Protocolo Sem Celulite. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING CTA (Apenas em Mobile) -->
+    <div class="floating-cta" id="floatingCta">
+        <span style="flex: 1; color: var(--text); font-weight: 600;">19 €</span>
+        <a href="[INSERIR URL DO CHECKOUT]" class="btn btn-primary" style="padding: 10px 16px; font-size: 0.85rem;">Começar</a>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        // Configuração central para fácil edição
+        const CONFIG = {
+            productName: "Protocolo Sem Celulite",
+            productPrice: "19 €",
+            productOldPrice: "190 €",
+            productDiscount: "90%",
+            productSaving: "171 €",
+            accessDuration: "365 dias",
+            guaranteeDays: "14",
+            checkoutUrl: "[INSERIR URL DO CHECKOUT]"
+        };
+
+        // Accordion functionality
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const item = this.parentElement;
+                const isActive = item.classList.contains('active');
+
+                // Fechar todos os acordeões
+                document.querySelectorAll('.accordion-item').forEach(accordionItem => {
+                    accordionItem.classList.remove('active');
+                });
+
+                // Abrir o actual se não estava activo
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Floating CTA visibility
+        window.addEventListener('scroll', function() {
+            const floatingCta = document.getElementById('floatingCta');
+            const checkoutSection = document.getElementById('checkout');
+            const checkoutPosition = checkoutSection.getBoundingClientRect().top;
+
+            if (checkoutPosition > window.innerHeight) {
+                floatingCta.classList.add('show');
+            } else {
+                floatingCta.classList.remove('show');
+            }
+        });
+
+        // Smooth scroll para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Substituir URLs do checkout
+        document.querySelectorAll('a[href="[INSERIR URL DO CHECKOUT]"]').forEach(link => {
+            link.href = CONFIG.checkoutUrl;
+        });
+
+        // Inicializar fade-in animations ao scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.card, .testimonial').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

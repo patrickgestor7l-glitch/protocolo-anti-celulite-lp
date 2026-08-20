@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="O protocolo caseiro de 7 dias para pernas mais lisas, leves e firmes. Guia ilustrado passo a passo, 15 minutos por dia, acesso vitalício.">
+<meta name="theme-color" content="#8B5E68">
+<meta property="og:title" content="Protocolo Anti-Celulite 7D | Pernas mais lisas em 7 dias">
+<meta property="og:description" content="O guia ilustrado de 7 dias que atua na verdadeira causa da celulite. 15 minutos por dia, em casa.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_PT">
+<title>Protocolo Anti-Celulite 7D | Pernas Mais Lisas em 7 Dias</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#8B5E68;
+  --secondary:#D8B8B0;
+  --accent:#9B5360;
+  --accent-dark:#7E3F4C;
+  --bg:#FFFBF9;
+  --bg-2:#F7EDE9;
+  --bg-3:#F0E1DC;
+  --text:#241F20;
+  --muted:#6E6263;
+  --line:#EADCD7;
+  --white:#fff;
+  --success:#2E7D5B;
+  --shadow-sm:0 1px 2px rgba(36,31,32,.05),0 2px 8px rgba(36,31,32,.04);
+  --shadow-md:0 4px 12px rgba(36,31,32,.06),0 12px 32px rgba(36,31,32,.06);
+  --shadow-lg:0 8px 24px rgba(36,31,32,.08),0 24px 64px rgba(139,94,104,.12);
+  --r:14px;
+  --r-lg:22px;
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --sp:clamp(56px,9vw,110px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--sans);
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.65;
+  font-size:16px;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img,video{max-width:100%;display:block}
+
+/* ---------- TYPE ---------- */
+h1,h2,h3{font-family:var(--serif);color:var(--text);letter-spacing:-.015em}
+h1{font-size:clamp(2rem,7.5vw,3.4rem);line-height:1.12;font-weight:700}
+h2{font-size:clamp(1.65rem,5.2vw,2.6rem);line-height:1.2;font-weight:600}
+h3{font-size:clamp(1.05rem,3vw,1.25rem);line-height:1.35;font-weight:600;font-family:var(--sans);letter-spacing:-.01em}
+p{color:var(--muted);line-height:1.75}
+strong{color:var(--text);font-weight:600}
+
+.eyebrow{
+  display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:14px;
+}
+.lead{font-size:clamp(1rem,2.6vw,1.15rem);color:var(--muted);line-height:1.8}
+
+/* ---------- LAYOUT ---------- */
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.narrow{max-width:760px;margin:0 auto}
+section{padding:var(--sp) 0}
+.head{text-align:center;max-width:720px;margin:0 auto clamp(38px,6vw,60px)}
+.head p{margin-top:14px}
+.tint{background:var(--bg-2)}
+.tint-deep{background:linear-gradient(170deg,var(--bg-2) 0%,var(--bg-3) 100%)}
+
+/* ---------- BUTTONS ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:19px 34px;border:none;border-radius:100px;
+  font-family:var(--sans);font-size:.94rem;font-weight:700;
+  letter-spacing:.04em;text-transform:uppercase;text-decoration:none;
+  cursor:pointer;transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s;
+  line-height:1.3;text-align:center;
+}
+.btn-primary{
+  background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%);
+  color:var(--white);box-shadow:0 6px 18px rgba(155,83,96,.28);
+}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(155,83,96,.36)}
+.btn-primary:active{transform:translateY(-1px)}
+.btn-light{background:var(--white);color:var(--accent);box-shadow:0 8px 26px rgba(0,0,0,.16)}
+.btn-light:hover{transform:translateY(-3px);box-shadow:0 14px 36px rgba(0,0,0,.22)}
+.btn-block{width:100%}
+.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+/* ---------- HEADER ---------- */
+header{
+  background:rgba(255,251,249,.88);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+  padding:15px 0;position:sticky;top:0;z-index:100;
+}
+.logo{
+  font-family:var(--serif);font-size:clamp(.94rem,3.6vw,1.05rem);font-weight:600;
+  color:var(--primary);letter-spacing:.01em;text-align:center;
+  white-space:nowrap;
+}
+
+/* ---------- HERO ---------- */
+.hero{
+  background:
+    radial-gradient(900px 520px at 82% 8%,rgba(216,184,176,.30),transparent 62%),
+    radial-gradient(700px 480px at 6% 92%,rgba(247,237,233,.9),transparent 60%),
+    var(--bg);
+  padding:clamp(44px,7vw,84px) 0 clamp(56px,8vw,96px);
+}
+.hero-grid{display:grid;gap:clamp(34px,5vw,58px);align-items:center}
+@media(min-width:920px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+
+.rating{
+  display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;
+  background:var(--white);padding:10px 18px;border-radius:100px;
+  box-shadow:var(--shadow-sm);border:1px solid var(--line);
+  font-size:.82rem;font-weight:600;color:var(--text);margin-bottom:22px;
+}
+.rating .stars{color:#E8A33D;letter-spacing:1px;font-size:.8rem}
+.rating .sep{width:1px;height:14px;background:var(--line)}
+
+.hero h1{margin-bottom:20px}
+.hero h1 .hl{
+  color:var(--accent);display:block;
+  font-size:.62em;letter-spacing:.13em;text-transform:uppercase;
+  font-family:var(--sans);font-weight:700;margin-bottom:12px;
+}
+.hero-sub{font-size:clamp(1rem,2.7vw,1.12rem);color:var(--muted);line-height:1.8;margin-bottom:30px;max-width:56ch}
+
+.hero-ticks{
+  display:grid;gap:11px;margin-bottom:30px;
+}
+@media(min-width:520px){.hero-ticks{grid-template-columns:1fr 1fr}}
+.tick{display:flex;align-items:flex-start;gap:10px;font-size:.93rem;color:var(--text);font-weight:500}
+.tick svg{flex:0 0 18px;margin-top:3px;color:var(--accent)}
+
+.hero-note{
+  display:flex;align-items:center;gap:12px;margin-top:22px;
+  font-size:.85rem;color:var(--muted);
+}
+.hero-note b{color:var(--text)}
+
+.hero-media{position:relative}
+.hero-media img{
+  width:100%;aspect-ratio:16/11;object-fit:cover;object-position:center 30%;
+  border-radius:var(--r-lg);box-shadow:var(--shadow-lg);
+}
+.hero-media::after{
+  content:'';position:absolute;inset:auto -14px -14px auto;
+  width:58%;height:58%;border-radius:var(--r-lg);
+  border:1px solid var(--secondary);z-index:-1;
+}
+
+/* ---------- PILLARS ---------- */
+.pillars{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--white)}
+.pillars{padding:clamp(38px,5vw,54px) 0}
+.pillar-grid{display:grid;gap:26px;grid-template-columns:1fr 1fr}
+@media(min-width:900px){.pillar-grid{grid-template-columns:repeat(4,1fr)}}
+.pillar{text-align:center}
+.pillar .ico{
+  width:46px;height:46px;margin:0 auto 12px;border-radius:50%;
+  background:var(--bg-2);display:flex;align-items:center;justify-content:center;
+  color:var(--accent);
+}
+.pillar h3{font-size:.98rem;margin-bottom:5px}
+.pillar p{font-size:.83rem;line-height:1.6}
+
+/* ---------- METHOD (3 camadas) ---------- */
+.layers{display:grid;gap:24px;margin-top:8px}
+@media(min-width:820px){.layers{grid-template-columns:repeat(3,1fr)}}
+.layer{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--r);
+  overflow:hidden;box-shadow:var(--shadow-sm);
+  transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s;
+}
+.layer:hover{transform:translateY(-5px);box-shadow:var(--shadow-md)}
+.layer img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.layer-body{padding:24px}
+.layer-num{
+  font-family:var(--serif);font-size:.9rem;color:var(--accent);
+  font-weight:700;letter-spacing:.1em;margin-bottom:8px;display:block;
+}
+.layer h3{margin-bottom:9px}
+.layer p{font-size:.9rem}
+
+/* ---------- RESULTS ---------- */
+.results{display:grid;gap:18px;grid-template-columns:1fr;align-items:start}
+@media(min-width:640px){.results{grid-template-columns:1fr 1fr}}
+.result{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--r);
+  overflow:hidden;box-shadow:var(--shadow-sm);
+}
+.result img{width:100%;object-fit:cover}
+.result span{
+  display:block;padding:12px 16px;font-size:.78rem;
+  color:var(--muted);letter-spacing:.06em;text-transform:uppercase;font-weight:600;
+}
+.disclaimer{
+  text-align:center;font-size:.83rem;color:var(--muted);
+  margin-top:26px;max-width:620px;margin-left:auto;margin-right:auto;font-style:italic;
+}
+
+/* ---------- TESTIMONIALS ---------- */
+.tgrid{display:grid;gap:20px}
+@media(min-width:760px){.tgrid{grid-template-columns:1fr 1fr}}
+.tcard{
+  background:var(--white);padding:clamp(24px,3.4vw,32px);
+  border-radius:var(--r);border:1px solid var(--line);
+  box-shadow:var(--shadow-sm);display:flex;flex-direction:column;
+  transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s;
+}
+.tcard:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
+.tcard .stars{color:#E8A33D;font-size:.82rem;letter-spacing:2px;margin-bottom:14px}
+.tcard blockquote{
+  font-size:.95rem;color:var(--text);line-height:1.85;
+  margin-bottom:18px;flex:1;font-style:italic;
+}
+.tcard cite{
+  font-style:normal;font-weight:700;font-size:.87rem;color:var(--text);
+  display:flex;align-items:center;gap:10px;
+}
+.tcard cite .av{
+  width:34px;height:34px;border-radius:50%;background:var(--bg-3);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--serif);color:var(--accent);font-size:.9rem;
+}
+
+/* ---------- INCLUDED ---------- */
+.inc-grid{display:grid;gap:clamp(30px,5vw,52px);align-items:center}
+@media(min-width:900px){.inc-grid{grid-template-columns:.95fr 1.05fr}}
+.inc-media video,.inc-media img{
+  width:100%;border-radius:var(--r-lg);box-shadow:var(--shadow-lg);
+  aspect-ratio:16/9;object-fit:cover;background:var(--bg-3);
+}
+.inc-list{display:grid;gap:18px}
+.inc-item{display:flex;gap:15px;align-items:flex-start}
+.inc-item .bx{
+  flex:0 0 34px;height:34px;border-radius:9px;background:var(--bg-2);
+  display:flex;align-items:center;justify-content:center;color:var(--accent);
+}
+.inc-item.bonus .bx{background:var(--accent);color:var(--white)}
+.inc-item h3{font-size:.98rem;margin-bottom:4px}
+.inc-item p{font-size:.88rem;line-height:1.65}
+
+/* ---------- FOR ME ---------- */
+.fm{display:grid;gap:20px}
+@media(min-width:760px){.fm{grid-template-columns:1fr 1fr}}
+.fm-col{
+  background:var(--white);border:1px solid var(--line);
+  border-radius:var(--r);padding:clamp(24px,3.4vw,32px);box-shadow:var(--shadow-sm);
+}
+.fm-col h3{
+  font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;
+  margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--line);
+}
+.fm-col.pain h3{color:var(--muted)}
+.fm-col.gain h3{color:var(--accent)}
+.fm-col ul{list-style:none;display:grid;gap:14px}
+.fm-col li{display:flex;gap:12px;align-items:flex-start;font-size:.92rem;line-height:1.6}
+.fm-col li svg{flex:0 0 18px;margin-top:3px}
+.fm-col.pain li svg{color:#B98A8A}
+.fm-col.gain li svg{color:var(--success)}
+
+/* ---------- AUTHOR ---------- */
+.author{display:grid;gap:clamp(28px,4.5vw,48px);align-items:center}
+@media(min-width:840px){.author{grid-template-columns:.85fr 1.15fr}}
+.author-photo img{
+  width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 25%;
+  border-radius:var(--r-lg);box-shadow:var(--shadow-lg);
+}
+.author-name{font-family:var(--serif);font-size:clamp(1.5rem,4vw,2rem);margin-bottom:8px}
+.author-cred{
+  font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--accent);font-weight:700;margin-bottom:20px;line-height:1.7;
+}
+.author p{margin-bottom:16px;font-size:.96rem}
+
+/* ---------- OFFER ---------- */
+.offer{
+  background:
+    radial-gradient(700px 420px at 50% 0%,rgba(216,184,176,.42),transparent 66%),
+    var(--bg-2);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.offer-card{
+  background:var(--white);border-radius:var(--r-lg);
+  box-shadow:var(--shadow-lg);border:1px solid var(--line);
+  max-width:640px;margin:0 auto;overflow:hidden;
+}
+.offer-top{
+  background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%);
+  color:var(--white);text-align:center;padding:14px 22px;
+  font-size:.76rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+}
+.offer-body{padding:clamp(30px,5vw,48px) clamp(22px,4vw,44px);text-align:center}
+.offer-product{
+  font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px;
+}
+.offer-body h2{margin-bottom:16px}
+.offer-price{
+  font-family:var(--serif);font-weight:700;color:var(--accent);
+  font-size:clamp(3.6rem,14vw,5.2rem);line-height:1;margin:26px 0 6px;
+}
+.offer-price sup{font-size:.38em;vertical-align:super;margin-left:4px}
+.offer-terms{
+  font-size:.85rem;color:var(--muted);letter-spacing:.03em;margin-bottom:28px;
+}
+.offer-ticks{
+  display:grid;gap:12px;text-align:left;max-width:400px;
+  margin:0 auto 30px;padding:22px;background:var(--bg);border-radius:var(--r);
+}
+.scarcity{
+  display:flex;gap:12px;align-items:flex-start;text-align:left;
+  background:#FBF4EC;border:1px solid #EBDCC6;border-radius:var(--r);
+  padding:16px 18px;margin-bottom:28px;
+}
+.scarcity svg{flex:0 0 18px;margin-top:3px;color:#B98338}
+.scarcity p{font-size:.86rem;color:var(--text);line-height:1.65;margin:0}
+.pay{
+  display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:22px;
+}
+.pay span{
+  font-size:.7rem;font-weight:600;letter-spacing:.06em;color:var(--muted);
+  border:1px solid var(--line);border-radius:6px;padding:6px 11px;background:var(--bg);
+}
+.offer-safe{font-size:.8rem;color:var(--muted);margin-top:16px}
+
+/* ---------- FAQ ---------- */
+.faq{display:grid;gap:12px;max-width:800px;margin:0 auto}
+.q{
+  background:var(--white);border:1px solid var(--line);
+  border-radius:var(--r);overflow:hidden;transition:box-shadow .3s,border-color .3s;
+}
+.q.open{box-shadow:var(--shadow-md);border-color:var(--secondary)}
+.q button{
+  width:100%;background:none;border:none;cursor:pointer;
+  padding:20px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px;
+  font-family:var(--sans);font-size:.96rem;font-weight:600;color:var(--text);
+  text-align:left;line-height:1.5;transition:color .25s;
+}
+.q button:hover{color:var(--accent)}
+.q button:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
+.q .chev{
+  flex:0 0 22px;height:22px;border-radius:50%;background:var(--bg-2);
+  display:flex;align-items:center;justify-content:center;color:var(--accent);
+  transition:transform .3s,background .3s;font-size:1rem;line-height:1;
+}
+.q.open .chev{transform:rotate(45deg);background:var(--accent);color:var(--white)}
+.q .a{max-height:0;overflow:hidden;transition:max-height .35s cubic-bezier(.4,0,.2,1)}
+.q.open .a{max-height:480px}
+.q .a-in{padding:0 22px 22px;font-size:.92rem;color:var(--muted);line-height:1.8}
+
+/* ---------- FINAL ---------- */
+.final{
+  background:linear-gradient(150deg,var(--accent) 0%,var(--accent-dark) 100%);
+  color:var(--white);text-align:center;
+}
+.final h2{color:var(--white);margin-bottom:18px}
+.final p{color:rgba(255,255,255,.9);max-width:560px;margin:0 auto 32px;font-size:1.02rem}
+.final .btn{margin-bottom:22px}
+.final small{display:block;color:rgba(255,255,255,.75);font-size:.82rem}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--text);color:rgba(255,255,255,.72);padding:clamp(44px,6vw,64px) 0 28px;font-size:.86rem}
+.f-grid{display:grid;gap:30px;margin-bottom:34px}
+@media(min-width:700px){.f-grid{grid-template-columns:1.5fr 1fr}}
+footer h3{color:var(--white);font-size:.88rem;margin-bottom:13px;font-family:var(--sans);letter-spacing:.02em}
+footer p{color:rgba(255,255,255,.62);font-size:.85rem;line-height:1.7}
+footer a{color:rgba(255,255,255,.72);text-decoration:none;transition:color .25s}
+footer a:hover{color:var(--secondary)}
+.f-links{display:grid;gap:9px}
+.f-legal{
+  border-top:1px solid rgba(255,255,255,.12);padding-top:24px;
+  font-size:.78rem;color:rgba(255,255,255,.5);line-height:1.75;
+}
+.f-legal p+p{margin-top:12px}
+.f-bottom{
+  border-top:1px solid rgba(255,255,255,.12);margin-top:24px;padding-top:22px;
+  text-align:center;font-size:.78rem;color:rgba(255,255,255,.45);
+}
+
+/* ---------- REVEAL ---------- */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+  *{animation:none!important}
+}
+
+/* ---------- MOBILE ---------- */
+@media(max-width:639px){
+  .btn{width:100%;padding:18px 22px;font-size:.87rem}
+  .hero-media::after{display:none}
+  .results{grid-template-columns:1fr}
+  .offer-ticks{padding:18px}
+  .q button{padding:17px 18px;font-size:.91rem}
+  .q .a-in{padding:0 18px 19px}
+}
+@media(max-width:380px){
+  .pillar-grid{grid-template-columns:1fr}
+  .rating{font-size:.75rem;padding:9px 14px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap"><div class="logo">Protocolo Anti-Celulite 7D</div></div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="topo">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span>4,9/5</span>
+          <span class="sep"></span>
+          <span>1.809 mulheres já começaram</span>
+        </div>
+
+        <h1><span class="hl">Adeus, celulite</span>O protocolo caseiro de 7 dias para uma pele mais lisa, firme e sem “casca de laranja”.</h1>
+
+        <p class="hero-sub">O guia ilustrado passo a passo que atua na <strong>verdadeira causa</strong> da flacidez e dos buraquinhos — sistema linfático, fáscia e circulação — em apenas 15 minutos por dia. Sem cremes caros, sem máquinas e sem idas à clínica de estética.</p>
+
+        <div class="hero-ticks">
+          <div class="tick"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l4 4 8-9"/></svg><span>7 dias de rotina guiada</span></div>
+          <div class="tick"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l4 4 8-9"/></svg><span>Cerca de 15 min por dia</span></div>
+          <div class="tick"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l4 4 8-9"/></svg><span>100% caseiro e manual</span></div>
+          <div class="tick"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l4 4 8-9"/></svg><span>Acesso vitalício</span></div>
+        </div>
+
+        <a href="#oferta" class="btn btn-primary btn-block">Quero descarregar o guia</a>
+
+        <div class="hero-note">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          <span><b>Risco zero.</b> Pagamento único · O material é seu para sempre.</span>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <img src="assets/RpPPo47ooE-BOYvRiyyuIg.avif" alt="Mulher a realizar a rotina de autocuidado do protocolo em casa" width="640" height="338" fetchpriority="high">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PILARES ============ -->
+<div class="pillars">
+  <div class="wrap">
+    <div class="pillar-grid">
+      <div class="pillar rv">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+        <h3>15 min por dia</h3>
+        <p>Encaixa em qualquer rotina, por mais preenchida que seja.</p>
+      </div>
+      <div class="pillar rv">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M5.6 5.6l2.8 2.8M3 12h4M5.6 18.4l2.8-2.8M12 21v-4M18.4 18.4l-2.8-2.8M21 12h-4M18.4 5.6l-2.8 2.8"/></svg></div>
+        <h3>Zero equipamento complexo</h3>
+        <p>Métodos manuais que faz com as suas próprias mãos.</p>
+      </div>
+      <div class="pillar rv">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 016.5 3H19v15H6.5A2.5 2.5 0 004 20.5z"/><path d="M4 5.5v15"/></svg></div>
+        <h3>Guia 100% visual</h3>
+        <p>Instruções diretas, com imagens nítidas de cada movimento.</p>
+      </div>
+      <div class="pillar rv">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M8.5 12a3.5 3.5 0 11-3.5 3.5A6.5 6.5 0 018.5 12zM15.5 12a3.5 3.5 0 103.5 3.5A6.5 6.5 0 0015.5 12z"/></svg></div>
+        <h3>Acesso vitalício</h3>
+        <p>Paga uma vez e o conhecimento fica consigo para sempre.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ A VERDADE / MÉTODO ============ -->
+<section>
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">O que ninguém lhe explica</span>
+      <h2>A celulite não é culpa sua — e também não é só gordura. É uma questão estrutural.</h2>
+      <p class="lead">É por isso que os cremes e as máquinas falham: atuam apenas à superfície. O protocolo trabalha as <strong>três camadas profundas</strong>, com movimentos simples que faz no conforto de casa.</p>
+    </div>
+
+    <div class="layers">
+      <article class="layer rv">
+        <img src="assets/lQWIexI2g0qiO-szofes_w.avif" alt="Movimentos de drenagem linfática nas pernas" width="640" height="338" loading="lazy">
+        <div class="layer-body">
+          <span class="layer-num">CAMADA 01</span>
+          <h3>Fluxo linfático</h3>
+          <p>Uma drenagem suave que ajuda a eliminar a retenção de líquidos. O inchaço e a sensação de pernas pesadas são os primeiros a ceder.</p>
+        </div>
+      </article>
+      <article class="layer rv">
+        <img src="assets/OpRn9VaDZE2tlvR0_wHYBw.avif" alt="Técnica de libertação da fáscia com rolo nas pernas" width="560" height="296" loading="lazy">
+        <div class="layer-body">
+          <span class="layer-num">CAMADA 02</span>
+          <h3>Libertação da fáscia</h3>
+          <p>Movimentos de massagem que soltam a fáscia tensa — a camada de tecido que repuxa a pele para baixo e cria os inestéticos buraquinhos.</p>
+        </div>
+      </article>
+      <article class="layer rv">
+        <img src="assets/gdy7Rw8EKUSFKp8Fij7iiA.avif" alt="Escovagem a seco integrada na rotina diária" width="560" height="296" loading="lazy">
+        <div class="layer-body">
+          <span class="layer-num">CAMADA 03</span>
+          <h3>Circulação</h3>
+          <p>Rotinas direcionadas que estimulam o fluxo sanguíneo e fortalecem a estrutura de suporte, para que os resultados se mantenham.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESULTADOS ============ -->
+<section class="tint">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Evoluções documentadas</span>
+      <h2>O que muda quando a rotina é feita com consistência</h2>
+    </div>
+
+    <div class="results">
+      <figure class="result rv"><img src="assets/3UY5qixYAEWfqQeNPqnAVA.avif" alt="Comparação da textura da pele nas coxas antes e depois do protocolo" width="384" height="313" loading="lazy"><span>Textura da pele · coxas</span></figure>
+      <figure class="result rv"><img src="assets/KgZwDzXuvk6YbC1EvDgy0w.avif" alt="Comparação da firmeza dos glúteos antes e depois do protocolo" width="384" height="230" loading="lazy"><span>Firmeza · glúteos</span></figure>
+      <figure class="result rv"><img src="assets/mTcVUerlJEinGat6lKWOtA.avif" alt="Comparação do aspeto da pele na parte posterior das pernas" width="384" height="215" loading="lazy"><span>Aspeto da pele · posterior</span></figure>
+      <figure class="result rv"><img src="assets/hxJ74Py3X0WCwrgbdMxjGg.avif" alt="Comparação de perto da superfície da pele" width="384" height="201" loading="lazy"><span>Superfície · pormenor</span></figure>
+    </div>
+
+    <p class="disclaimer">Imagens reais de participantes. Os resultados variam de pessoa para pessoa e dependem de vários fatores, incluindo consistência, tipo de pele e características individuais.</p>
+  </div>
+</section>
+
+<!-- ============ TESTEMUNHOS ============ -->
+<section>
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Prova social</span>
+      <h2>A transformação que 1.809 mulheres já viveram</h2>
+    </div>
+
+    <div class="tgrid">
+      <article class="tcard rv">
+        <div class="stars">★★★★★</div>
+        <blockquote>“Sempre tive imensos complexos com as minhas coxas. Gastei fortunas em cremes, escovagem a seco e tratamentos estéticos, mas a celulite voltava sempre. Após 4 dias a seguir o passo a passo deste e-book, a minha pele ficou visivelmente mais lisa. Ao sétimo dia, ganhei finalmente confiança para vestir calções de novo!”</blockquote>
+        <cite><span class="av">S</span>Sofia R.</cite>
+      </article>
+      <article class="tcard rv">
+        <div class="stars">★★★★★</div>
+        <blockquote>“A maioria dos produtos apenas disfarça o problema. Este guia explica visualmente o porquê de a celulite surgir e como combatê-la na raiz. Só a rotina de drenagem linfática ilustrada no material mudou por completo as minhas pernas: acordo sem aquela sensação de peso e totalmente desinchada.”</blockquote>
+        <cite><span class="av">A</span>Aiko T.</cite>
+      </article>
+      <article class="tcard rv">
+        <div class="stars">★★★★★</div>
+        <blockquote>“Já comprei tantos materiais e desisti porque eram demasiado complexos. Este, eu devorei! As imagens são super claras e as explicações vão direto ao assunto. A textura da minha pele melhorou de forma incrível.”</blockquote>
+        <cite><span class="av">N</span>Natalie B.</cite>
+      </article>
+      <article class="tcard rv">
+        <div class="stars">★★★★★</div>
+        <blockquote>“Estava cética porque não queria gastar dinheiro em mais equipamentos. Mas o protocolo deste e-book é quase todo manual. A secção onde ensina a usar as ventosas foi a verdadeira viragem. Três semanas depois, a minha pele está mais firme do que nos últimos dez anos.”</blockquote>
+        <cite><span class="av">C</span>Camila V.</cite>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ O QUE RECEBE ============ -->
+<section class="tint">
+  <div class="wrap">
+    <div class="inc-grid">
+      <div class="inc-media rv">
+        <video src="assets/inside-course.mp4" autoplay muted loop playsinline preload="metadata" poster="assets/NA-Dx43eiUuaDGnn4lCWBw.avif" aria-label="Pré-visualização do interior do programa"></video>
+      </div>
+      <div>
+        <div class="rv">
+          <span class="eyebrow">Entrega imediata</span>
+          <h2 style="margin-bottom:26px">O que vai receber no seu email hoje</h2>
+        </div>
+        <div class="inc-list">
+          <div class="inc-item rv">
+            <span class="bx"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11.5l5 5 9-10"/></svg></span>
+            <div><h3>Protocolo Anti-Celulite 7D — guia digital completo (PDF)</h3><p>O protocolo de 7 dias com instruções claríssimas e imagens passo a passo. Lê, observa a imagem e aplica.</p></div>
+          </div>
+          <div class="inc-item rv">
+            <span class="bx"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11.5l5 5 9-10"/></svg></span>
+            <div><h3>Acesso vitalício</h3><p>Descarrega para o telemóvel, tablet ou computador e guarda o material para a vida toda. Sem renovações nem mensalidades.</p></div>
+          </div>
+          <div class="inc-item rv">
+            <span class="bx"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11.5l5 5 9-10"/></svg></span>
+            <div><h3>Para todas as mulheres</h3><p>Adequado a todos os tipos de corpo e a qualquer nível de condição física.</p></div>
+          </div>
+          <div class="inc-item bonus rv">
+            <span class="bx"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 21V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/></svg></span>
+            <div><h3>Bónus exclusivo: mapa mental + checklist diária</h3><p>Em formato imagem, para guardar no telemóvel. Assim nunca se esquece de nenhum passo do desafio.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ISTO É PARA MIM ============ -->
+<section>
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Antes de avançar</span>
+      <h2>Este guia é exatamente para si se…</h2>
+    </div>
+
+    <div class="fm">
+      <div class="fm-col pain rv">
+        <h3>Se isto lhe soa familiar</h3>
+        <ul>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l8 8M14 6l-8 8"/></svg><span>Já gastou dinheiro em cremes e massagens que não trouxeram resultados duradouros.</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l8 8M14 6l-8 8"/></svg><span>Sente desconforto ao usar calções, vestidos curtos ou fato de banho na praia.</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l8 8M14 6l-8 8"/></svg><span>Acorda com as pernas pesadas, doridas ou com muita retenção de líquidos.</span></li>
+        </ul>
+      </div>
+      <div class="fm-col gain rv">
+        <h3>Então isto é para si</h3>
+        <ul>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l4 4 8-9"/></svg><span>Prefere um material de leitura rápido e altamente visual, que vai direto ao ponto.</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l4 4 8-9"/></svg><span>Precisa de uma rotina de 15 minutos que se adapte aos seus dias agitados.</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l4 4 8-9"/></svg><span>Quer resultados visíveis na sua pele, de forma caseira e natural.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AUTORA ============ -->
+<section class="tint">
+  <div class="wrap">
+    <div class="author">
+      <div class="author-photo rv">
+        <img src="assets/Sz297xjc-kmqBDekv24QhA.avif" alt="[CONFIRMAR] Maja Paluszek, criadora do Protocolo Anti-Celulite 7D" width="560" height="315" loading="lazy">
+      </div>
+      <div class="rv">
+        <span class="eyebrow">A especialista por trás do método</span>
+        <div class="author-name">Maja Paluszek</div>
+        <div class="author-cred">Cosmetologista certificada · Terapeuta de bem-estar<br>Academia de Ciências Médicas da Silésia</div>
+        <p>Com mais de 7 anos de experiência clínica, a Maja reuniu todo o seu conhecimento baseado em evidências científicas num formato simples e acessível a qualquer mulher.</p>
+        <p><strong>O Protocolo Anti-Celulite 7D</strong> é a experiência prática da Maja condensada num guia visual de 7 dias. São rigorosamente as mesmas rotinas manuais que aplica nas suas clientes de spa, agora documentadas em texto e imagem para que possa fazer em casa, sempre que quiser.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFERTA (antes do FAQ) ============ -->
+<section class="offer" id="oferta">
+  <div class="wrap">
+    <div class="offer-card rv">
+      <div class="offer-top">Oferta de lançamento em Portugal</div>
+      <div class="offer-body">
+        <div class="offer-product">Protocolo Anti-Celulite 7D</div>
+        <h2>Comece hoje por 10&nbsp;€</h2>
+        <p class="lead" style="margin-bottom:4px">Estamos a abrir o protocolo ao mercado português com um valor de lançamento, em troca do feedback das primeiras participantes. É o preço mais baixo a que este guia alguma vez esteve disponível.</p>
+
+        <div class="offer-price">10<sup>€</sup></div>
+        <div class="offer-terms">Pagamento único · Acesso vitalício · Sem subscrições</div>
+
+        <div class="offer-ticks">
+          <div class="tick"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l4 4 8-9"/></svg><span>Guia completo em PDF, ilustrado passo a passo</span></div>
+          <div class="tick"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l4 4 8-9"/></svg><span>Bónus: mapa mental + checklist diária</span></div>
+          <div class="tick"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l4 4 8-9"/></svg><span>Entrega imediata no seu email</span></div>
+          <div class="tick"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l4 4 8-9"/></svg><span>Garantia de satisfação — devolvemos o valor</span></div>
+        </div>
+
+        <div class="scarcity">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10" cy="10" r="7.5"/><path d="M10 6v4.2l2.8 1.6"/></svg>
+          <p>O valor de lançamento aplica-se ao primeiro grupo de participantes portuguesas. Quando esse grupo estiver completo, o guia volta ao preço normal — sem aviso prévio nesta página.</p>
+        </div>
+
+        <button class="btn btn-primary btn-block" onclick="checkout()">Quero o meu acesso por 10&nbsp;€</button>
+
+        <div class="pay">
+          <span>MB WAY</span><span>Multibanco</span><span>Visa</span><span>Mastercard</span>
+        </div>
+        <p class="offer-safe">🔒 Pagamento 100% seguro · Entrega imediata no seu email</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section>
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Ainda com dúvidas?</span>
+      <h2>Perguntas frequentes</h2>
+    </div>
+
+    <div class="faq">
+      <div class="q">
+        <button type="button" aria-expanded="false">Por quanto tempo tenho acesso ao material?<span class="chev">+</span></button>
+        <div class="a"><div class="a-in">O acesso é <strong>100% vitalício</strong>. Assim que efetuar a compra, descarrega os ficheiros (PDF e imagens) para o seu dispositivo. Serão seus para o resto da vida, sem qualquer custo adicional, anuidade ou mensalidade.</div></div>
+      </div>
+      <div class="q">
+        <button type="button" aria-expanded="false">Como vou receber o produto?<span class="chev">+</span></button>
+        <div class="a"><div class="a-in">É automático. Assim que o pagamento for confirmado, recebe imediatamente um email com o link seguro para descarregar o guia e todos os materiais de bónus.</div></div>
+      </div>
+      <div class="q">
+        <button type="button" aria-expanded="false">Posso ler através do telemóvel?<span class="chev">+</span></button>
+        <div class="a"><div class="a-in">Claro que sim. O material está em formato PDF universal. Pode descarregar e ler no telemóvel, tablet ou computador, onde e quando lhe der jeito.</div></div>
+      </div>
+      <div class="q">
+        <button type="button" aria-expanded="false">De que material vou precisar em casa?<span class="chev">+</span></button>
+        <div class="a"><div class="a-in">Apenas de uma escova de cerdas (para a escovagem a seco), o seu óleo ou creme de corpo preferido e um tapete de ginástica ou yoga. As ventosas de silicone são recomendadas para uma das fases, mas não são obrigatórias para obter resultados.</div></div>
+      </div>
+      <div class="q">
+        <button type="button" aria-expanded="false">Existe alguma subscrição ou custo adicional?<span class="chev">+</span></button>
+        <div class="a"><div class="a-in">Não. Paga 10&nbsp;€ uma única vez e recebe acesso completo e permanente ao material. Não há subscrições mensais, anuidades nem custos escondidos.</div></div>
+      </div>
+      <div class="q">
+        <button type="button" aria-expanded="false">E se eu não me adaptar ao protocolo?<span class="chev">+</span></button>
+        <div class="a"><div class="a-in">A sua compra está protegida por uma <strong>garantia de satisfação</strong>. Se sentir que o conteúdo não lhe trouxe valor, basta solicitar o reembolso através do canal indicado no email de confirmação da compra e devolvemos o seu dinheiro. Sem burocracias.</div></div>
+      </div>
+      <div class="q">
+        <button type="button" aria-expanded="false">Os resultados são iguais para todas as pessoas?<span class="chev">+</span></button>
+        <div class="a"><div class="a-in">Não. Os resultados variam de pessoa para pessoa e dependem de vários fatores, incluindo a consistência com que aplica a rotina, o tipo de pele, o estilo de vida e características individuais.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="final">
+  <div class="wrap">
+    <h2>Pernas mais lisas, leves e firmes por menos do que um café por semana.</h2>
+    <p>Paga apenas uma vez e o conhecimento fica consigo para a vida toda. O risco está todo do nosso lado.</p>
+    <a href="#oferta" class="btn btn-light">Confirmar e descarregar agora — 10&nbsp;€</a>
+    <small>🔒 Pagamento 100% seguro · Entrega imediata no seu email</small>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h3>Protocolo Anti-Celulite 7D</h3>
+        <p>O guia caseiro de 7 dias que ajuda mulheres a construir uma rotina simples de autocuidado para pernas mais leves e firmes.</p>
+      </div>
+      <div>
+        <h3>Informação legal</h3>
+        <div class="f-links">
+          <a href="[INSERIR URL]">Política de Privacidade</a>
+          <a href="[INSERIR URL]">Termos e Condições</a>
+          <a href="[INSERIR URL]">Política de Reembolso</a>
+          <a href="[INSERIR URL]">Política de Cookies</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="f-legal">
+      <p><strong style="color:rgba(255,255,255,.8)">Aviso de segurança.</strong> Antes de iniciar qualquer prática física ou técnica apresentada no guia, leia as orientações fornecidas e respeite os seus limites. Se tiver alguma condição de saúde, estiver grávida, tiver realizado recentemente algum procedimento médico ou tiver dúvidas sobre a segurança de determinada prática, procure aconselhamento de um profissional de saúde.</p>
+      <p><strong style="color:rgba(255,255,255,.8)">Aviso médico.</strong> Os conteúdos deste website têm fins exclusivamente educativos e informativos e não substituem aconselhamento, diagnóstico ou tratamento médico. Os resultados variam de pessoa para pessoa.</p>
+    </div>
+
+    <div class="f-bottom">© 2026 Protocolo Anti-Celulite 7D. Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+<script>
+// ============================================================
+//  CONFIGURAÇÃO — cole aqui a URL do checkout quando a tiver.
+//  É o ÚNICO sítio a alterar. Só o botão da secção de oferta
+//  a utiliza; todos os outros botões são âncoras para #oferta.
+// ============================================================
+const CHECKOUT_URL = 'https://pay.hotmart.com/N107243141C?off=4622by56';
+
+function checkout(){
+  if(CHECKOUT_URL && CHECKOUT_URL.indexOf('INSERIR') === -1){
+    window.location.href = CHECKOUT_URL;
+  } else {
+    console.warn('CHECKOUT_URL ainda não configurada.');
+  }
+}
+
+// ---- FAQ acordeão ----
+document.querySelectorAll('.q button').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var item = btn.parentElement;
+    var wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.q').forEach(function(q){
+      q.classList.remove('open');
+      q.querySelector('button').setAttribute('aria-expanded','false');
+    });
+    if(!wasOpen){
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded','true');
+    }
+  });
+});
+
+// ---- Reveal on scroll ----
+var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+  });
+},{threshold:.12, rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+</script>
+</body>
+</html>
